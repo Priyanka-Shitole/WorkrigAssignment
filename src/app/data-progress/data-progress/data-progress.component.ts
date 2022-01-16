@@ -36,7 +36,6 @@ export class DataProgressComponent implements OnInit {
         this.closeCount++;
       }
     });
-    console.log('this.progressCount', this.progressCount);
   }
   showProgress(event: any) {
     if (event === 'progress') {
@@ -51,6 +50,5 @@ export class DataProgressComponent implements OnInit {
     else if (event === 'closed') {
       this.percent = this.closeCount;
     }
-    console.log('event', event);
   }
 }

@@ -45,7 +45,6 @@ export class DataTableComponent implements OnInit {
   @ViewChild(MatSort) sort = new MatSort();
   @ViewChild(MatPaginator) paginator: MatPaginator = new MatPaginator(new MatPaginatorIntl(), ChangeDetectorRef.prototype);
   constructor(private dataService: DataService) {
-    console.log('data', data)
     this.users = [];
 
     data.projectDetails.forEach((data: any) => {
@@ -105,7 +104,6 @@ export class DataTableComponent implements OnInit {
     filterValue = filterValue.trim(); // Remove whitespace
     filterValue = filterValue.toLowerCase(); // Datasource defaults to lowercase matches
     this.dataSource.filter = filterValue;
-    console.log('this.dataSource.filter', this.dataSource.filter);
   }
 
   refresh(id: any) {
@@ -139,18 +137,7 @@ export class DataTableComponent implements OnInit {
       )
       .subscribe(() => {
         this.width = this.width + 1;
-        console.log(this.width);
       });
-
-    // Observable.timer$(0, 100)
-    //   .takeWhile(() =>
-    //     this.isWidthWithinLimit()
-    //   )
-    //   .subscribe(() => {
-    //     this.width = this.width + 1;
-    //     console.log(this.width);
-    //   })
-
   }
 
   isWidthWithinLimit() {
