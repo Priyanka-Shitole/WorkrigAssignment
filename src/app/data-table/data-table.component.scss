@@ -1,0 +1,80 @@
+.project-section {
+  padding: 0 48px;
+  .dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    // margin-right: 10px;
+    background-color: lightgrey;
+  }
+  .checkbox {
+    padding: 0 16px 18px 0 !important;
+  }
+  table {
+    width: 100%;
+    box-shadow: unset;
+  }
+  .example-header {
+    text-align: right;
+    margin: 0px auto 0px auto;
+    font-size: 24px;
+  }
+  .mat-form-field-appearance-outline .mat-form-field-infix {
+    padding: unset !important;
+  }
+  .section {
+    font-size: 24px;
+    .resource {
+      color: lightgrey;
+    }
+    th,
+    td {
+      font-size: 18px;
+      padding: 8px 0 25px 0;
+    }
+    .project-name {
+      color: #3f51b5;
+      // font-size: 16px;
+    }
+    .client-name {
+      color: gray;
+      font-size: 16px;
+    }
+    .project-schedule {
+      .duration {
+        display: flex;
+        color: gray;
+        font-size: 14px;
+      }
+    }
+    .menu {
+      color: gray;
+      font-size: 44px;
+    }
+  }
+
+  .meter {
+    height: 10px; /* Can be anything */
+    position: relative;
+    width: 178px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    padding: 5px;
+  }
+
+  .meter > span {
+    display: block;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #3f51b5;
+    background-image: linear-gradient(center bottom, rgb(43, 194, 83) 37%, rgb(84, 240, 84) 69%);
+    box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+  }
+}

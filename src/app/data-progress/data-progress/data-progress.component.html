@@ -1,0 +1,45 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<h4>Projects</h4>
+<div class="outer-section">
+
+  <div class="progress-bar">
+    <circle-progress [percent]="percent" [radius]="70" [outerStrokeWidth]="16" [innerStrokeWidth]="0"
+      [outerStrokeColor]="'#78C000'" [innerStrokeColor]="'#C7E596'" [animation]="true" [animationDuration]="300">
+    </circle-progress>
+    <div class="elements-section1">
+
+      <table>
+        <tr (click)="showProgress('progress')">
+          <td><span class="dot in-progress"></span> In Progress </td>
+          <td>{{progressCount}}</td>
+        </tr>
+        <tr (click)="showProgress('blocked')">
+          <td><span class="dot blocked"></span> Blocked </td>
+          <td>{{blockedCount}}</td>
+        </tr>
+        <tr (click)="showProgress('pipeline')">
+          <td><span class="dot pipeline"></span> Pipeline </td>
+          <td>{{pipelineCount}}</td>
+        </tr>
+        <tr (click)="showProgress('closed')">
+          <td><span class="dot closed"></span> Closed </td>
+          <td>{{closeCount}}</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="elements-section2">
+      <h1>0</h1>
+      <div>Ending this quarter</div>
+    </div>
+    <div class="elements-section2">
+      <h1>-</h1>
+      <div>Total tasks</div>
+    </div>
+
+    <div class="elements-section2">
+      <h1>{{resourceCount}}</h1>
+      <div>Resources</div>
+    </div>
+  </div>
+</div>
